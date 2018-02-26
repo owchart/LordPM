@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <script type="text/javascript" language="gaia">
+      {按钮点击}
+      function onclick()
+      {
+        var(sender, '', pName, '');
+        getsender(sender);
+        getproperty(pName, sender, 'name');
+        if(str.equals(pName, 'btnCancel'))
+        {
+          closewindow();
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div type="usercontrol" cid="windowex" name="collection" text="嘉奖记录" size="820,500">
+      <div type="div" backcolor="empty" dock="fill" margin="10,30,10,10">
+        <div type="splitlayout" layoutstyle="BottomToTop" size="510,354" splitterposition="0,300,0,300" name="SplitLayoutDiv" text="SplitLayoutDiv" location="0,0" dock="Fill">
+          <div name="Div2" size="200,100">
+            <input type="button" name="btnAdd" text="添加" location="15,28" size="50,20" width="50" />
+            <input type="button" name="btnDel" text="删除" location="75,28" size="50,20" width="50" />
+            <input type="button" name="btnSubmit" text="应用" location="676,28" size="50,20" width="50" />
+            <input type="button" name="btnClose" text="关闭" location="735,28" size="50,20" width="50" />
+          </div>
+          <div name="Div" size="200,100" dock="Fill">
+            <table name="dgvTable" text="Grid4" location="0,0" size="800,406" dock="fill" multiselect="True" backcolor="255,255,255">
+              <tr>
+                <th name="colT1" cellalign="Left" location="0,0" size="500,20" textalign="MiddleLeft">名称</th>
+                <th name="colT2" cellalign="Left" location="300,0" size="500,20" textalign="MiddleLeft">表达式</th>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

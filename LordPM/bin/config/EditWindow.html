@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <script type="text/javascript" language="gaia">
+      {按钮点击}
+      function onclick()
+      {
+        var(sender, '', pName, '');
+        getsender(sender);
+        getproperty(pName, sender, 'name');
+        if(str.equals(pName, 'btnCancel'))
+        {
+          closewindow();
+        }
+      }
+    </script>
+  <head>
+  </head>
+  <body>
+    <div type="usercontrol" cid="windowex" name="collection" text="嘉奖记录" size="820,600">
+      <div type="div" backcolor="empty" bordercolor="empty" dock="fill" margin="10,30,10,10">
+        <label name="Labell" text="JiraID：" location="31,21" size="41,16" textalign="TopLeft" />
+        <label name="Label2" text="发布人：" location="358,21" size="46,17" tabstop="True" />
+        <label name="Label3" text="标题：" location="31,55" size="46,17" tabstop="True" textalign="TopLeft" />
+        <label name="Label4" text="地址：" location="31,83" size="46,17" tabstop="True" textalign="TopLeft" />
+        <label name="Label5" text="分类：" location="297,111" size="33,17" textalign="TopLeft" />
+        <label name="Label6" text="组：" location="31,111" size="33,17" textalign="TopLeft" />
+        <label name="Label7" text="相关组：" location="548,111" size="100,20" />
+        <label name="Label8" text="开发者：" location="31,137" size="46,17" />
+        <label name="Label9" text="结束日期：" location="407,165" size="73,17" />
+        <label name="Label10" text="开始日期：" location="31,165" size="73,17" />
+        <label name="Label11" text="概述：" location="31,284" size="46,17" />
+        <label name="Label12" text="分支：" location="31,188" size="49,16" />
+        <label name="Label13" text="流程控制：" location="31,387" size="73,17" />
+        <label name="Label14" text="→" location="660,379" size="29,26" font="Arial,20" />
+        <label name="Label15" text="→" location="213,379" size="29,26" font="Arial,20" />
+        <label name="Label16" text="→" location="361,379" size="29,26" font="Arial,20" />
+        <label name="Label17" text="→" location="524,379" size="29,26" font="Arial,20" />
+        <label name="Label18" text="→" location="213,430" size="29,26" font="Arial,20" />
+        <label name="Label19" text="→" location="366,430" size="29,26" font="Arial,20" />
+        <label name="Label20" text="紧急程度：" location="31,479" size="60,17" />
+        <input type="button" name="btnGo" text="前往" location="676,80" size="100,20" />
+        <input type="button" name="btnSelectDeveloper" text="选取..." location="219,134" size="50,20" width="50" />
+        <input type="button" name="btnSubmit" text="确定" location="617,511" size="70,18" width="70" />
+        <input type="button" name="btnCancel" text="取消" location="704,510" size="70,20" width="70" />
+        <input type="checkbox" name="cbCloseTask" text="关闭任务" location="417,436" size="100,20" />
+        <input type="checkbox" name="cbDeveloperReceive" text="开发领取" location="115,385" size="100,20" height="20" />
+        <input type="checkbox" name="cbDeveloperPass" text="开发完成" location="260,385" size="100,20" />
+        <input type="checkbox" name="cbTestPass" text="测试通过" location="417,385" size="100,20" />
+        <input type="checkbox" name="cbProductPass" text="产品通过" location="572,385" size="100,20" />
+        <input type="checkbox" name="cbWaitPublish" text="准备上线" location="115,436" size="100,20" />
+        <input type="checkbox" name="cbPublished" text="已经上线" location="260,436" size="100,20" />
+        <input type="text" name="txtCreater" location="416,18" size="100,20" />
+        <input type="text" name="txtJiraID" location="93,18" size="100,20" />
+        <input type="text" name="txtHttpPath" location="93,80" size="548,21" />
+        <input type="text" name="txtTitle" location="93,49" size="548,21" />
+        <input type="text" name="txtRelativeGroup" location="621,108" size="154,20" />
+        <input type="text" name="txtDeveloper" location="93,134" size="100,20" />
+        <input type="text" name="rtbBranches" location="97,189" size="522,81" />
+        <input type="text" name="rtbDescription" location="97,286" size="522,84" />
+        <select name="cbCategory" location="356,107" size="122,21" temptext="网页">
+          <option text="其他" />
+        </select>
+        <select name="cbGroup" location="93,107" size="122,21" temptext="Web和技术研发">
+        </select>
+        <select name="cbHurry" location="111,476" size="100,20" temptext="一般">
+          <option text="低" />
+          <option text="一般" />
+          <option text="重要" />
+          <option text="紧急" />
+        </select>
+        <datetimepicker name="dtpStart" location="93,162" size="120,20" width="120" />
+        <datetimepicker name="dtpEnd" location="477,161" size="120,20" width="120" />
+        <label name="Label" text="*必填" location="656,51" size="37,17" forecolor="255,0,0" />
+        <label name="Label21" text="*必填" location="206,22" size="37,17" forecolor="255,0,0" />
+        <label name="Label22" text="*必填" location="534,21" size="37,17" forecolor="255,0,0" />
+      </div>
+    </div>
+  </body>
+</html>
